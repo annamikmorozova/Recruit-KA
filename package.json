@@ -1,0 +1,30 @@
+{
+  "name": "recruit-ka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annamikmorozova/Recruit-KA.git"
+  },
+  "author": "Anna Morozova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annamikmorozova/Recruit-KA/issues"
+  },
+  "homepage": "https://github.com/annamikmorozova/Recruit-KA#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "connect-session-sequelize": "^7.0.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "sequelize": "^6.3.5"
+  }
+}
