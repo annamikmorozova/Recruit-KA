@@ -4,14 +4,14 @@ const morgan = require("morgan");
 const compression = require("compression");
 const session = require("express-session");
 const passport = require("passport");
-// const SequelizeStore = require("connect-session-sequelize")(session.Store);
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 if (process.env.NODE_ENV !== "production") require("../secrets");
-// const db = require("./db");
+const db = require("./db");
 
-// const sessionStore = new SequelizeStore({
-// 	db
-// });
+const sessionStore = new SequelizeStore({
+	db
+});
 
 const PORT = process.env.PORT || 5000;
 const app = express();
@@ -82,17 +82,17 @@ const startListening = () => {
 	const server = app.listen(PORT, () => console.log(`Connected to ${PORT}`));
 };
 
-// const syncDb = () => db.sync();
+const syncDb = () => db.sync();
 
-// async function bootApp() {
-// 	await sessionStore.sync();
-// 	await syncDb();
-// 	await createApp();
-// 	await startListening();
-// }
+async function bootApp() {
+	await sessionStore.sync();
+	await syncDb();
+	await createApp();
+	await startListening();
+}
 
-// if (require.main === module) {
-// 	bootApp();
-// } else {
-// 	createApp();
-// }
+if (require.main === module) {
+	bootApp();
+} else {
+	createApp();
+}

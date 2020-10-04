@@ -1,22 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 
-export const UserHome = props => {
-	const {firstName} = props;
+class UserHome extends Component {
+	render () {
+		// const {firstName} = this.props;
 
-	return (
-		<div>
-			<h3 className="welcome-admin">
-				Welcome, {firstName} <GrEmoji />
-			</h3>
-		</div>
-	);
+		return (
+			<div>
+				<h3 className="welcome-admin">
+					Welcome
+				</h3>
+			</div>
+		);
+	}
 };
 
 const mapState = state => {
 	return {
-		firstName: state.user.firstName
+		user: state.user
 	};
 };
 

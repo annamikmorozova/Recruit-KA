@@ -18,7 +18,7 @@ class Routes extends Component {
 
 		return (
 			<Switch>
-				<Route exact path="/posts" component={AllPosts} />
+				<Route path="/home" component={UserHome} />
 				<Route path="/login" component={Login} />
 				{isLoggedIn && (
 					<Switch>
@@ -32,7 +32,7 @@ class Routes extends Component {
 
 const mapState = state => {
 	return {
-		isLoggedIn: !!state.user.id
+		isLoggedIn: !!state.user
 	};
 };
 

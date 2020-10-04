@@ -7,7 +7,7 @@ import user from "./user";
 const middleware = composeWithDevTools(
 	applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
 );
-const store = createStore(user, middleware);
+const store = createStore(combineReducers({user}), middleware);
 
 export default store;
 export * from "./user";
