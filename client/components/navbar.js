@@ -3,15 +3,21 @@ import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 import {logout} from "../store";
-import {Row, Col} from "react-bootstrap";
+import {Row, Col, Navbar, Nav} from "react-bootstrap";
 
 class MainNavbar extends React.Component {
 
 	render() {
 		return (
-			<div className="container">
-				<div>Hiiiiiiiii</div>
-			</div>
+			<Navbar bg="dark" variant="dark">
+				<Navbar.Brand href="#home">Navbar</Navbar.Brand>
+					<Nav className="mr-auto">
+						<Nav.Link href="#home">About</Nav.Link>
+						<Nav.Link href="#plans">Plans</Nav.Link>
+						<Nav.Link href="#login">Login</Nav.Link>
+						<Nav.Link href="#signup">Signup</Nav.Link>
+					</Nav>
+			</Navbar>
 		);
 	}
 }
