@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import {
 	Login,
 	UserHome,
+	About
 } from "./components";
 import {me} from "./store";
 
@@ -18,7 +19,7 @@ class Routes extends Component {
 
 		return (
 			<Switch>
-				<Route path="/home" component={UserHome} />
+				<Route path="/home" component={About} />
 				<Route path="/login" component={Login} />
 				{isLoggedIn && (
 					<Switch>
