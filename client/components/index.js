@@ -5,4 +5,5 @@ export {default as About} from "./About";
 export {default as RegulatoryAssociations} from "./RegulatoryAssociations";
 export {default as NCAAtable} from "./NCAAtable";
 export {default as AboutPlans} from "./AboutPlans";
-export {default as PrivacyPolicy} from "./PrivacyPolicy"
+export {default as PrivacyPolicy} from "./PrivacyPolicy";
+export {default as TermsConditions} from "./TermsConditions";
