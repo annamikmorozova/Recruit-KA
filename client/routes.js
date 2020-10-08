@@ -7,7 +7,8 @@ import {
 	UserHome,
 	About,
 	PrivacyPolicy,
-	TermsConditions
+	TermsConditions,
+	ProfileForm
 } from "./components";
 import {me} from "./store";
 
@@ -25,6 +26,7 @@ class Routes extends Component {
 				<Route path="/login" component={Login} />
 				<Route path="/privacy-policy" component={PrivacyPolicy} />
 				<Route path="/terms-and-conditions" component={TermsConditions} />
+				<Route path="/profile" component={ProfileForm} />
 				{isLoggedIn && (
 					<Switch>
 						<Route path="/home" component={UserHome} />
