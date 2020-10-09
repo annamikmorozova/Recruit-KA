@@ -22,8 +22,9 @@ class Routes extends Component {
 
 		return (
 			<Switch>
-				<Route path="/home" component={About} />
+				<Route path="/" component={About} />
 				<Route path="/login" component={Login} />
+				<Route path="/signup" component={Signup} />
 				<Route path="/privacy-policy" component={PrivacyPolicy} />
 				<Route path="/terms-and-conditions" component={TermsConditions} />
 				<Route path="/profile" component={ProfileForm} />
@@ -32,6 +33,7 @@ class Routes extends Component {
 						<Route path="/home" component={UserHome} />
 					</Switch>
 				)}
+				<Route component={Login} />
 			</Switch>
 		);
 	}

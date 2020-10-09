@@ -4,11 +4,11 @@ import {connect} from "react-redux";
 
 class UserHome extends Component {
 	render () {
-		// const {firstName} = this.props;
+		const {firstName} = this.props;
 
 		return (
 			<div>
-				<h3 className="welcome-admin">
+				<h3 className="welcome-user">
 					Welcome
 				</h3>
 			</div>
@@ -18,7 +18,8 @@ class UserHome extends Component {
 
 const mapState = state => {
 	return {
-		user: state.user
+		user: state.user,
+		firstName: state.user.firstName
 	};
 };
 
