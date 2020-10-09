@@ -17,6 +17,31 @@ const User = db.define("user", {
 			notEmpty: true
 		}
 	},
+	dateOfBirth: {
+		type: Sequelize.DATEONLY,
+		allowNull: false,
+		validate: {
+			notEmpty: true
+		}
+	},
+	gender: {
+		type: Sequelize.ENUM("female", "male"),
+		defaultValue: "male"
+	},
+	bio: {
+		type: Sequelize.TEXT,
+		allowNull: false,
+		validate: {
+			notEmpty: true
+		}
+	},
+	nationality: {
+		type: Sequelize.STRING,
+		allowNull: false,
+		validate: {
+			notEmpty: true
+		}
+	},
 	email: {
 		type: Sequelize.STRING,
 		unique: true,
@@ -39,11 +64,8 @@ const User = db.define("user", {
 		}
 	},
 	role: {
-		type: Sequelize.ENUM("admin", "guest"),
+		type: Sequelize.ENUM("admin", "player", "guest"),
 		defaultValue: "guest"
-	},
-	googleId: {
-		type: Sequelize.STRING
 	}
 });
 
