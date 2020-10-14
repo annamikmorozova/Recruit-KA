@@ -8,3 +8,4 @@ export {default as AboutPlans} from "./AboutPlans";
 export {default as PrivacyPolicy} from "./PrivacyPolicy";
 export {default as TermsConditions} from "./TermsConditions";
 export {default as ProfileForm} from "./ProfileForm";
+export {default as Footer} from "./Footer";
