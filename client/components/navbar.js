@@ -10,11 +10,11 @@ class MainNavbar extends React.Component {
 		return (
 			<Navbar bg="dark" variant="dark">
 				<Navbar.Brand href="/home">R-KA</Navbar.Brand>
-					<Nav className="mr-auto">
-						<Nav.Link href="/home">About</Nav.Link>
-						<Nav.Link href="/plans">Plans</Nav.Link>
-						<Nav.Link href="/login">Login</Nav.Link>
-						<Nav.Link href="/signup">Signup</Nav.Link>
+					<Nav className="mr-auto panel">
+						<Nav.Link className="Nav-item" href="/home">About</Nav.Link>
+						<Nav.Link className="Nav-item" href="/plans">Plans</Nav.Link>
+						<Nav.Link className="Nav-item" href="/login">Login</Nav.Link>
+						<Nav.Link className="Nav-item" href="/signup">Signup</Nav.Link>
 					</Nav>
 			</Navbar>
 		);

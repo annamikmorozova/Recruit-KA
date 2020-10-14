@@ -3,20 +3,20 @@
 @import url(https://fonts.googleapis.com/css?family=Spectral:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic);
 
 * {
-	font-family: "Roboto", regular;
+  font-family: "Roboto", regular;
 }
 
 body {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .container {
-	margin: 30px;
+  margin: 30px;
 }
 
 .profile-form {
-	display: list-item;
-	flex-direction: column;
+  display: list-item;
+  flex-direction: column;
 }
 
 *,
@@ -93,4 +93,90 @@ label.light {
   form {
     max-width: 480px;
   }
+}
+
+/* cool buttons */
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
+
+body {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAFfKj/FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF4OXp8PX50NXZBLxR6QAAAEhJREFUeNpiYGJgYGACCCAGMAAIIDiDCSCAGLAAgABCEcbBBAggGIORQhogwNCcwIjddKgQI6ojUbkgWSYMo+BCjKiOR9PLBAAchAAxHFDBbwAAAABJRU5ErkJggg==')
+}
+
+* {
+  box-sizing: border-box
+}
+
+.Nav-item {
+  color: #454545;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #454545;
+  position: relative;
+  margin: 1em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-family: comfortaa;
+  font-weight: bold
+}
+
+.Nav-item:before,
+.Nav-item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-color: #454545;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  transition: all 0.3s ease-in-out
+}
+
+.Nav-item:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
+}
+
+.Nav-item:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+.Nav-item:hover:before,
+.Nav-item:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: #fff
+}
+
+.Nav-item:hover {
+  color: #353535;
+  background-color: #fff;
+  border-color: #fff
+}
+
+.panel {
+  max-width: 960px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+  color: black;
+}
+
+.navbar-brand {
+  font-family: comfortaa;
+  font-weight: bold
 }
