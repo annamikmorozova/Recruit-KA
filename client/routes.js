@@ -23,12 +23,12 @@ class Routes extends Component {
 
 		return (
 			<Switch>
-				<Route path="/" component={About} />
-				<Route path="/login" component={Login} />
+				<Route exact path="/login" component={Login} />
 				<Route path="/signup" component={Signup} />
 				<Route path="/privacy-policy" component={PrivacyPolicy} />
 				<Route path="/terms-and-conditions" component={TermsConditions} />
 				<Route path="/profile" component={ProfileForm} />
+				<Route exact path="/" component={About} />
 				{isLoggedIn && (
 					<Switch>
 						<Route path="/home" component={UserHome} />

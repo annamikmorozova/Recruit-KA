@@ -10,12 +10,22 @@ class MainNavbar extends React.Component {
 		return (
 			<Navbar bg="dark" variant="dark">
 				<Navbar.Brand href="/home">R-KA</Navbar.Brand>
+				{this.props.isLoggedIn ? (
+					<Nav className="mr-auto panel">
+						<Nav.Link className="Nav-item" href="/home">About</Nav.Link>
+						<Nav.Link className="Nav-item" href="/plans">Plans</Nav.Link>
+						<a href="#" onClick={this.props.handleClick}>
+                    		Logout
+                  		</a>
+					</Nav>
+				) : (
 					<Nav className="mr-auto panel">
 						<Nav.Link className="Nav-item" href="/home">About</Nav.Link>
 						<Nav.Link className="Nav-item" href="/plans">Plans</Nav.Link>
 						<Nav.Link className="Nav-item" href="/login">Login</Nav.Link>
 						<Nav.Link className="Nav-item" href="/signup">Signup</Nav.Link>
 					</Nav>
+				)}
 			</Navbar>
 		);
 	}

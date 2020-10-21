@@ -19,7 +19,6 @@ const User = db.define("user", {
 	},
 	dateOfBirth: {
 		type: Sequelize.DATEONLY,
-		allowNull: false,
 		validate: {
 			notEmpty: true
 		}
@@ -30,14 +29,12 @@ const User = db.define("user", {
 	},
 	bio: {
 		type: Sequelize.TEXT,
-		allowNull: false,
 		validate: {
 			notEmpty: true
 		}
 	},
 	nationality: {
 		type: Sequelize.STRING,
-		allowNull: false,
 		validate: {
 			notEmpty: true
 		}
