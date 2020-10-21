@@ -4,15 +4,11 @@
 
 body {
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAFfKj/FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF4OXp8PX50NXZBLxR6QAAAEhJREFUeNpiYGJgYGACCCAGMAAIIDiDCSCAGLAAgABCEcbBBAggGIORQhogwNCcwIjddKgQI6ojUbkgWSYMo+BCjKiOR9PLBAAchAAxHFDBbwAAAABJRU5ErkJggg==');
-  font-family: sans-serif;
-}
-
-* {
   font-family: "Roboto", regular;
 }
 
 .container {
-  margin: 30px;
+  margin-top: 30px;
 }
 
 .profile-form {
@@ -250,3 +246,24 @@ label.light {
 	flex-direction: row;
 }
 
+.plan-headers {
+  color: #454545;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #454545;
+  position: relative;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-family: comfortaa;
+  font-weight: bold
+}
+
+.plan-button {
+  font-family: comfortaa;
+}
+
+.tennis-ball-img {
+  height: 100px;
+}

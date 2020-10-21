@@ -1,5 +1,5 @@
 import React from "react";
-import {Row} from "react-bootstrap";
+import {Row, Col} from "react-bootstrap";
 import RegulatoryAssociations from "./RegulatoryAssociations";
 import NCAAtable from "./NCAAtable";
 import AboutPlans from "./AboutPlans";
@@ -8,15 +8,20 @@ export default class About extends React.Component {
     render() {
         return (
             <div className="container">
+                <Col>
+                    <img src="./tennis-balls.jpg" className="tennis-ball-img" alt="TennisBall"/>
+                </Col>
+                <Col>
                 <div className="col-md-12">
                     <p className="text-black">Recruitka is designed to help tennis players continue playing their favorite sport for an american
                     college or university with academic or athletic scholarship. We are the first subscription-based
                     recruting agency where you have an option to choose only the service you need to get into the team of
-                    your dream.</p>
+                    your dreams.</p>
                     <p className="text-black">From own experience coming to the USA with a full-scholarship following with getting a
                     tuition-free master's degree, we will help you to follow the same path. Look at your options below to
                     get started.</p>
                 </div>
+                </Col>
                 
                 <AboutPlans />
 

@@ -6,34 +6,40 @@ export default class AboutPlans extends React.Component {
         return (
             <Row>
             <div className="col-md-3">
-                <h2 className="text-white bg-secondary plan-headers">Basic Plan</h2>
-                    <li>Creating a player's profile to share with coaches.</li>
+                <h5 className="text-white bg-secondary plan-headers">Basic Plan</h5>
+                    <li>Create a RKA profile to share with coaches.</li>
                     <li>When to start looking for a school and what to start from.</li>
                     <li>When and Who you can talk to help with your school search.</li>
                     <li>Connect with other players who are searching for schools.</li>
-                <p><a className="btn btn-secondary plan-button" href="/pricing" role="button">Create your FREE profile &raquo;</a></p>
+                    <button className="btn btn-secondary plan-button" href="/pricing">Create your FREE profile &raquo;</button>
             </div>
 
             <div className="col-md-3">
-                <h2 className="text-white bg-secondary plan-headers">Discovery Plan</h2>
-                    <li>Your profile will be shared with all the coaches from NCAA Division I,II, III in the USA, NAIA, and NJCAA I, II, III schools. Choose all or a few divisions.</li>
-                <p><a className="btn btn-secondary plan-button" href="/pricing" role="button">Be visible &raquo;</a></p>
+                <h5 className="text-white bg-secondary plan-headers">Discovery Plan</h5>
+                    <li>Basic plan benefits.</li>
+                    <li>Your profile will be shared with coaches from American colleges and universities.</li>
+                    <li>One evaluation to understand where is your fit based on your academic and athletic skills.</li>
+                    <button className="btn btn-secondary plan-button" href="/pricing">Be visible &raquo;</button>
             </div>
 
             <div className="col-md-3">
-                <h2 className="text-white bg-secondary plan-headers">VIP Plan</h2>
-                    <li>Individual player's evaluation. We will exaplain your chances of schools based on your level and test scores.</li>
-                    <li>Have the benefits of Basic, Discovery, and ad-ons.</li>
+                <h5 className="text-white bg-secondary plan-headers">VIP Plan</h5>
+                    <li>Two evaluations to understand where is your fit based on your academic and athletic skills.</li>
+                    <li>Have the benefits of Basic and Discovery</li>
                     <li>We will walk you from where to start to signing a contract with a school depending on your level and
                         interests.</li>
-                <p><a className="btn btn-secondary plan-button" href="/pricing" role="button">See what is included &raquo;</a></p>
+                <button className="btn btn-secondary plan-button" href="/pricing">See what is included &raquo;</button>
             </div>
 
             <div className="col-md-3">
-                <h2 className="text-white bg-secondary plan-headers">ADD-ONS</h2>
-                    <li>See what else you can add to your plan.</li>
-                    <li>TOEFL and SAT registration help, school applications, NCAA eligibility questions and more.</li>
-                <p><a className="btn btn-secondary plan-button" href="/pricing" role="button">Learn more now &raquo;</a></p>
+                <h5 className="text-white bg-secondary plan-headers">ADD-ONS</h5>
+                    <li>NCAA eligibility questions.</li>
+                    <li>TOEFL and SAT registration help.</li>
+                    <li>School application help.</li>
+                    <li>Medical forms.</li>
+                    <li>High School transcripts examples.</li>
+                    <li>Another help request.</li>
+                <button className="btn btn-secondary plan-button" href="/pricing">Learn more now &raquo;</button>
             </div>
         </Row>
         )
