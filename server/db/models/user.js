@@ -48,6 +48,35 @@ const User = db.define("user", {
 			notEmpty: true
 		}
 	},
+	hand: {
+		type: Sequelize.ENUM("right", "left", "ambidextrous"),
+		defaultValue: "right"
+	},
+	cc: {
+		type:Sequelize.NUMBER
+	},
+	SAT: {
+		type:Sequelize.NUMBER
+	},
+	TOEFL: {
+		type:Sequelize.NUMBER
+	},
+	GPA: {
+		type:Sequelize.DECIMAL
+	},
+	academicAchievement: {
+		type: Sequelize.TEXT
+	},
+	academicAchievement: {
+		type: Sequelize.TEXT
+	},
+	studyField: {
+		type: Sequelize.STRING
+	},
+	gamingStyle: {
+		type: Sequelize.ENUM("aggressive", "serve-and-volley", "counterpuncher", "all-court"),
+		defaultValue: "all-court"
+	},
 	password: {
 		type: Sequelize.STRING,
 		get() {
