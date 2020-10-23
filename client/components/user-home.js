@@ -9,7 +9,7 @@ class UserHome extends Component {
 		return (
 			<div>
 				<h3 className="welcome-user">
-					Welcome
+					Welcome {this.props.firstName}
 				</h3>
 			</div>
 		);

@@ -15,7 +15,7 @@ router.get('/', adminOnly, async (req, res, next) => {
   try {
     const users = await User.findAll({
         attributes: ["id", "firstName", "lastName", "dateOfBirth", 
-        "gender", "bio", "nationality", "email", ]
+        "gender", "bio", "nationality", "email"]
     });
     res.json(users);
   } catch (error) {
